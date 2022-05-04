@@ -10,6 +10,9 @@ const createList = () => {
         deleteButton.classList.add('btn-danger')
         deleteButton.innerHTML = 'Delete'
         li.appendChild(deleteButton)
+        deleteButton.onclick = () => {
+            li.remove()
+        }
     }
 
     const createEditButton = () => {
